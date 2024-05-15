@@ -1,10 +1,7 @@
-const Square = ({ value }) => {
-  // here we are destructuring the props that is being passed to the value
+const Square = ({ value, onClick }) => {
   return (
-    <button>
+    <button type="button" className="square" onClick={onClick}>
       {value}
-      {/* <h3>{children}</h3> */}
-      {/* <h5>children will be rendered belllow</h5> */}
     </button>
   );
 };
